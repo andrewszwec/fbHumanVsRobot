@@ -1,0 +1,58 @@
+---
+title: "Kaggle - Facebook Human or Robot?"
+author: "Andrew Szwec"
+date: "2 May 2015"
+output: html_document
+---
+
+## Load Data
+```{r }
+setwd("~/Documents/kaggle/fbHumanVsRobot")
+
+train_full <- read.csv("train.csv", header=TRUE)
+test <- read.csv("test.csv", header=TRUE)
+bids <- read.csv("bids.csv", header=TRUE)
+
+
+bif_df <- merge(x=train_full, ybids, by=c("bidder_id"), all=L)
+save(mod_rf,file = "mod_rf.RData")
+```
+
+## Partition Data
+```{r}
+library(caret)
+set.seed(55886)
+
+# Create a building data set and validation set
+inBuild <- createDataPartition(train_full$outcome, p=0.7, list=FALSE)
+validation <- train_full[-inBuild,]; 
+buildData <- train_full[inBuild,]
+
+inTrain <- createDataPartition(buildData$outcome, p=0.7, list=FALSE)
+training <- buildData[inTrain,]; 
+testing <- buildData[-inTrain,]
+
+# Check all rows are accounted for
+nrow(validation) + nrow(training) + nrow(testing)
+nrow(train_full)
+# YES!
+```
+
+
+
+## Inspect data
+```{r}
+#rand_train_sample <- train_full[sample(1:nrow(train_full), 10, replace=FALSE),] 
+require(plyr)
+count(train_full, vars="outcome")
+```
+In the training set there are 103 positive (robot) cases (5.3%).
+
+Join bidder lookup to bids table
+```{r}
+
+
+
+
+
+```
