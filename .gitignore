@@ -1,0 +1,2 @@
+# exclude data files downloaded from kaggle
+*.csv
