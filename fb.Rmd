@@ -13,9 +13,9 @@ train_full <- read.csv("train.csv", header=TRUE)
 test <- read.csv("test.csv", header=TRUE)
 bids <- read.csv("bids.csv", header=TRUE)
 
-
-bif_df <- merge(x=train_full, ybids, by=c("bidder_id"), all=L)
-save(mod_rf,file = "mod_rf.RData")
+head(train_full)
+big_df <- merge(x=train_full, ybids, by=c("bidder_id"), all=L)
+save(big_df,file = "big_df.RData")
 ```
 
 ## Partition Data
@@ -56,3 +56,10 @@ Join bidder lookup to bids table
 
 
 ```
+
+Packages for High performance computing
+ff for 'flat-file' storage and very efficient retrieval
+bigmemory for out-of-R-memory but still in RAM (or file-backed) use
+biglm for out-of-memory model fitting with lm() and glm()-style models.
+
+
