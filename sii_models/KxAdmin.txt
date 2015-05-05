@@ -1,0 +1,5 @@
+Name	Class	ClassVersion	SpaceName	Version	CreationDate	Comment
+fbHumanVsRobot	Kxen.Classification	3	fbHumanVsRobot.txt	1	2015-05-04 15:13:41	fbHumanVsRobot
+outcome_dbo	Kxen.Classification	3	fbHumanVsRobot_002.txt	1	2015-05-04 15:16:04	fbHumanVsRobot_002
+fbHumanVsRobot_003	Kxen.Classification	3	fbHumanVsRobot_003.txt	1	2015-05-04 15:21:55	fbHumanVsRobot_003
+fbHumanVsRobot_004_granular	Kxen.Classification	3	fbHumanVsRobot_004_granular.txt	1	2015-05-05 10:21:02	fbHumanVsRobot_004_granular

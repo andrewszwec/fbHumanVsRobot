@@ -1,0 +1,46 @@
+/*
+		Ideas for derived attributes
+		----------------------------
+		Use bidder_id as the user id and roll up on this.
+
+		Other attributes will be calculated in R
+		- - - - - - - - - - - - - - - - -- - - - - 
+		- Skewness
+		- kurtosis
+
+		Attributes created in SQL
+		- - - - - - - - - -- - - -- -
+		- number of auctions in last 1 wk, 2wks, 1, 2, 3, 6, 12, 24 months
+		- avg number auctions per week
+		- max number auctions per week
+		- min number auctions per week
+
+		- number of distinct auctioners << done >>
+		- number of distinct auctioners visited ltd
+		- number of distinct auctioners visited last 1 wk, 2wks, 1, 2, 3, 6, 12, 24 months
+		
+		- distinct number of bids per auction << done >>
+		- avg number of bids per auction
+		- max number of bids per auction
+		- min number of bids per auction
+
+		- number of unique merch types << done >>
+
+		- avg time between bids
+		- max time between bids
+		- min time between bids
+
+		- number of countries bids made from << done >>
+		- number of ips used << done >>
+		
+		- max number of auctions from the same actioner
+		- Number of bids at same moment <<done>>
+		- number of refer urls
+		
+		DEFUNCT
+		DEFUNCT
+		- Number of payment accounts used (no body has used more than one account)
+		- number of addresses used (no body has used more than one address)
+		- number of auctions from the same actioner (same as number of bids per auction, since we dont have a proper time to identify bids)
+
+*/
