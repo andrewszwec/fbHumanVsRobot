@@ -3,3 +3,5 @@ fbHumanVsRobot	Kxen.Classification	3	fbHumanVsRobot.txt	1	2015-05-04 15:13:41	fb
 outcome_dbo	Kxen.Classification	3	fbHumanVsRobot_002.txt	1	2015-05-04 15:16:04	fbHumanVsRobot_002
 fbHumanVsRobot_003	Kxen.Classification	3	fbHumanVsRobot_003.txt	1	2015-05-04 15:21:55	fbHumanVsRobot_003
 fbHumanVsRobot_004_granular	Kxen.Classification	3	fbHumanVsRobot_004_granular.txt	1	2015-05-05 10:21:02	fbHumanVsRobot_004_granular
+DRV_BAR_TRAIN_20150505_SII_REGRESSION	Kxen.Classification	3	DRV_BAR_TRAIN_20150505_SII_REGRESSION_001.txt	1	2015-05-06 10:40:49	DRV_BAR_TRAIN_20150505_SII_REGRESSION
+WRK_BAR_TRAIN_20150503_SII_REGRESSION	Kxen.Classification	3	WRK_BAR_TRAIN_20150503_SII_REGRESSION_001.txt	1	2015-05-06 13:23:53	WRK_BAR_TRAIN_20150503_SII_REGRESSION

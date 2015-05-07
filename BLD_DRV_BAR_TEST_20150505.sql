@@ -1,5 +1,7 @@
 
-create proc BLD_DRV_BAR_TRAIN_20150505 as
+
+
+alter proc BLD_DRV_BAR_TEST_20150505 as
 
 SELECT bar.[bidder_id]
 		,[payment_account]
@@ -27,12 +29,11 @@ SELECT bar.[bidder_id]
 		,b.country
 		,b.ip
 		,b.url
-		,[outcome]
-into DRV_BAR_TRAIN_20150505
-FROM WRK_BAR_TRAIN_20150503 bar
+
+into DRV_BAR_TEST_20150505
+FROM WRK_BAR_TEST_20150503 bar
 left join bids b
 on bar.bidder_id = b.bidder_id
 
-
---select top 10 * from DRV_BAR_TRAIN_20150505
-
+-- exec BLD_DRV_BAR_TEST_20150505
+--select top 10 * from DRV_BAR_TEST_20150505
