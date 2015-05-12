@@ -59,7 +59,8 @@ save(mod_rf, file = "mod_rf_001.RData")
 
 
 
-
+library("bigmemory")
+library("biganalytics")
 
 
 

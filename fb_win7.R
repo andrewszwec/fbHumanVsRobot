@@ -411,3 +411,6 @@ data.frame(pred_gam, outcome=test$outcome)
 # 
 # 'Positive' Class : 0   
 
+
+
+

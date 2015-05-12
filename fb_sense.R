@@ -5,12 +5,14 @@
 
 
 load("submission.Rdata")
-
+unzip("DRV_BAR_TRAIN_20150505.zip")
 training <- read.csv("DRV_BAR_TRAIN_20150505.csv", header=TRUE)
 
 # Make outcome a factor
 training$outcome <- as.factor(training$outcome) 
 
+install.packages("caret")
+require(caret)
 
 #
 #       RANDOM FOREST CLASSIFICATION
