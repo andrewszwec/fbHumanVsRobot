@@ -1,0 +1,21 @@
+Make dummy variables for kaggle
+
+-- How many of each country are there?
+select 	top 10 country
+		,count(*) as count_country
+from DRV_BAR_2015...
+order by count(*) desc;
+
+-- Now make variables out of the top 10 
+select 
+		case when country = 'US' then 1 else 0
+			end as IS_US
+		,case when country = 'EU' then 1 else 0
+			end as IS_EU
+		, -- keep going.....
+		
+		,case when auction = 'something' then 1 else 0
+			end as Is_auction_AEIOU
+		, -- etc...
+		,case when address = 'popular address'
+		
