@@ -1,0 +1,1 @@
+This model was made using a distributed parallel processing random forest using 150k records from "DRV_BAR_TRAIN_20150505.csv"
